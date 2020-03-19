@@ -1,0 +1,207 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'n' ]
+2 info using npm@1.3.25
+3 info using node@v0.11.11
+4 verbose cache add [ 'n', null ]
+5 verbose cache add name=undefined spec="n" args=["n",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'n',
+6 verbose parsed url   path: 'n',
+6 verbose parsed url   href: 'n' }
+7 silly lockFile d1854cae-n n
+8 verbose lock n /Users/kaori/.npm/d1854cae-n.lock
+9 silly lockFile d1854cae-n n
+10 silly lockFile d1854cae-n n
+11 verbose addNamed [ 'n', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 6b58d7dc-n n@
+14 verbose lock n@ /Users/kaori/.npm/6b58d7dc-n.lock
+15 silly addNameRange { name: 'n', range: '*', hasData: false }
+16 verbose url raw n
+17 verbose url resolving [ 'https://registry.npmjs.org/', './n' ]
+18 verbose url resolved https://registry.npmjs.org/n
+19 info trying registry request attempt 1 at 23:49:40
+20 verbose etag "ddda8e1d73f906e07a36514b4c3caf67"
+21 http GET https://registry.npmjs.org/n
+22 http 304 https://registry.npmjs.org/n
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Sat, 02 Nov 2019 14:49:40 GMT',
+23 silly registry.get     connection: 'close',
+23 silly registry.get     'set-cookie': [ '__cfduid=d68e7e4b12fa70803de092b0683ec80f21572706180; expires=Sun, 01-Nov-20 14:49:40 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+23 silly registry.get     'cf-cache-status': 'HIT',
+23 silly registry.get     'cache-control': 'max-age=300',
+23 silly registry.get     'cf-ray': '52f6ea9a6c452e19-NRT',
+23 silly registry.get     age: '3405',
+23 silly registry.get     etag: '"ddda8e1d73f906e07a36514b4c3caf67"',
+23 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly registry.get     'last-modified': 'Fri, 25 Oct 2019 07:47:44 GMT',
+23 silly registry.get     vary: 'accept-encoding, accept',
+23 silly registry.get     'x-amz-meta-rev': '381-e2a6883e833f09b941689425e4a6172f',
+23 silly registry.get     server: 'cloudflare' } ]
+24 verbose etag n from cache
+25 silly addNameRange number 2 { name: 'n', range: '*', hasData: true }
+26 silly addNameRange versions [ 'n',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.0.3',
+26 silly addNameRange     '0.0.4',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.4.2',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.5.1',
+26 silly addNameRange     '0.5.2',
+26 silly addNameRange     '0.5.3',
+26 silly addNameRange     '0.5.4',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.6.1',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.7.1',
+26 silly addNameRange     '0.7.2',
+26 silly addNameRange     '0.7.3',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.8.2',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.2',
+26 silly addNameRange     '0.9.3',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '1.2.2',
+26 silly addNameRange     '1.2.3',
+26 silly addNameRange     '1.2.4',
+26 silly addNameRange     '1.2.5',
+26 silly addNameRange     '1.2.6',
+26 silly addNameRange     '1.2.7',
+26 silly addNameRange     '1.2.8',
+26 silly addNameRange     '1.2.9',
+26 silly addNameRange     '1.2.11',
+26 silly addNameRange     '1.2.13',
+26 silly addNameRange     '1.2.14',
+26 silly addNameRange     '1.3.0',
+26 silly addNameRange     '1.4.0',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '1.4.1',
+26 silly addNameRange     '2.0.1',
+26 silly addNameRange     '1.4.2',
+26 silly addNameRange     '2.0.2',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.1.1',
+26 silly addNameRange     '2.1.2',
+26 silly addNameRange     '2.1.3',
+26 silly addNameRange     '2.1.4',
+26 silly addNameRange     '2.1.5',
+26 silly addNameRange     '2.1.6',
+26 silly addNameRange     '2.1.7',
+26 silly addNameRange     '2.1.8',
+26 silly addNameRange     '2.1.9',
+26 silly addNameRange     '2.1.10',
+26 silly addNameRange     '2.1.11',
+26 silly addNameRange     '2.1.12',
+26 silly addNameRange     '3.0.0',
+26 silly addNameRange     '3.0.1',
+26 silly addNameRange     '3.0.2',
+26 silly addNameRange     '4.0.0',
+26 silly addNameRange     '4.1.0',
+26 silly addNameRange     '5.0.0-next.0',
+26 silly addNameRange     '5.0.0',
+26 silly addNameRange     '5.0.1',
+26 silly addNameRange     '5.0.2',
+26 silly addNameRange     '6.0.0-0',
+26 silly addNameRange     '6.0.0-1',
+26 silly addNameRange     '6.0.0',
+26 silly addNameRange     '6.0.1',
+26 silly addNameRange     '6.1.0' ] ]
+27 verbose addNamed [ 'n', '6.1.0' ]
+28 verbose addNamed [ '6.1.0', '6.1.0' ]
+29 silly lockFile f55cc123-n-6-1-0 n@6.1.0
+30 verbose lock n@6.1.0 /Users/kaori/.npm/f55cc123-n-6-1-0.lock
+31 silly lockFile f55cc123-n-6-1-0 n@6.1.0
+32 silly lockFile f55cc123-n-6-1-0 n@6.1.0
+33 silly lockFile 6b58d7dc-n n@
+34 silly lockFile 6b58d7dc-n n@
+35 silly resolved [ { name: 'n',
+35 silly resolved     description: 'Interactively Manage All Your Node Versions',
+35 silly resolved     version: '6.1.0',
+35 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+35 silly resolved     homepage: 'https://github.com/tj/n',
+35 silly resolved     bugs: { url: 'https://github.com/tj/n/issues' },
+35 silly resolved     contributors: [ [Object], [Object], [Object] ],
+35 silly resolved     keywords:
+35 silly resolved      [ 'nvm',
+35 silly resolved        'node',
+35 silly resolved        'version',
+35 silly resolved        'manager',
+35 silly resolved        'switcher',
+35 silly resolved        'node',
+35 silly resolved        'binary',
+35 silly resolved        'env' ],
+35 silly resolved     bin: { n: './bin/n' },
+35 silly resolved     files: [ 'bin/n' ],
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/tj/n.git' },
+35 silly resolved     scripts: { test: 'test/bin/run-all-tests' },
+35 silly resolved     devDependencies: { bats: '^1.1.0' },
+35 silly resolved     preferGlobal: true,
+35 silly resolved     os: [ '!win32' ],
+35 silly resolved     engines: { node: '*' },
+35 silly resolved     license: 'MIT',
+35 silly resolved     readme: '# `n` – Interactively Manage Your Node.js Versions\n\n[![npm](https://img.shields.io/npm/dt/n.svg?style=flat-square)](https://www.npmjs.com/package/n)\n[![npm](https://img.shields.io/npm/dm/n.svg?style=flat-square)](https://www.npmjs.com/package/n)\n[![npm](https://img.shields.io/npm/v/n.svg?style=flat-square)](https://www.npmjs.com/package/n)\n[![npm](https://img.shields.io/npm/l/n.svg?style=flat-square)](https://www.npmjs.com/package/n)\n\nNode.js version management: no subshells, no profile setup, no convoluted API, just **simple**.\n\n![usage animation](http://nimit.io/images/n/n.gif)\n\n(Note: `n` is not supported natively on Windows.)\n\n- [`n` – Interactively Manage Your Node.js Versions](#n-%e2%80%93-interactively-manage-your-nodejs-versions)\n    - [Installation](#installation)\n        - [Third Party Installers](#third-party-installers)\n    - [Installing Node Versions](#installing-node-versions)\n    - [Specifying Node Versions](#specifying-node-versions)\n    - [Removing Versions](#removing-versions)\n    - [Using Downloaded Node Versions Without Reinstalling](#using-downloaded-node-versions-without-reinstalling)\n    - [Miscellaneous](#miscellaneous)\n    - [Custom Source](#custom-source)\n    - [Custom Architecture](#custom-architecture)\n    - [Optional Environment Variables](#optional-environment-variables)\n\n## Installation\n\nSince you probably already have `node`, the easiest way to install `n` is through `npm`:\n\n    npm install -g n\n\nAlternatively, you can clone this repo and\n\n    make install\n\nto install `n` to `bin/n` of the directory specified in the environment variable `$PREFIX`, which defaults to `/usr/local` (note that you will likely need to use `sudo`). To install `n` in a custom location (such as `$CUSTOM_LOCATION/bin/n`), run `PREFIX=$CUSTOM_LOCATION make install`.\n\nOnce installed, `n` caches `node` versions in subdirectory `n/versions` of the directory specified in environment variable `N_PREFIX`, which defaults to `/usr/local`; and the _active_ `node` version is installed directly in `N_PREFIX`.\n\nTo avoid requiring `sudo` for `n` and `npm` global installs, it is suggested you either install to your home directory using `N_PREFIX`, or take ownership of the system directories:\n\n    # make cache folder (if missing) and take ownership\n    sudo mkdir -p /usr/local/n\n    sudo chown -R $(whoami) /usr/local/n\n    # take ownership of node install destination folders\n    sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share\n\n### Third Party Installers\n\nOn macOS with [Homebrew](https://brew.sh/) you can install the [n formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/n.rb).\n\n    brew install n\n\nOn Linux and macOS, [n-install](https://github.com/mklement0/n-install) allows installation directly from GitHub; for instance:\n\n    curl -L https://git.io/n-install | bash\n\nn-install sets both `PREFIX` and `N_PREFIX` to `$HOME/n`, installs `n` to `$HOME/n/bin`, modifies the initialization files of supported shells to export `N_PREFIX` and add `$HOME/n/bin` to the `PATH`, and installs the latest LTS `node` version.\n\nAs a result, both `n` itself and all `node` versions it manages are hosted inside a single, optionally configurable directory, which you can later remove with the included `n-uninstall` script. `n-update` updates `n` itself to the latest version. See the [n-install repo](https://github.com/mklement0/n-install) for more details.\n\n## Installing Node Versions\n\nSimply execute `n <version>` to download and install a version of `node`. If `<version>` has already been downloaded, `n` will install from its cache.\n\n    n 10.16.0\n    n lts\n\nExecute `n` on its own to view your downloaded versions, and install the selected version.\n\n    $ n\n\n      node/4.9.1\n    ο node/8.11.3\n      node/10.15.0\n\n    Use up/down arrow keys to select a version, return key to install, d to delete, q to quit\n\n(You can also use `j` and `k` to navigate up or down without using arrows.)\n\nIf the active node version does not change after install, try opening a new shell in case seeing a stale version.\n\n## Specifying Node Versions\n\nThere are a variety of ways of specifying the target node version for `n` commands. Most commands use the latest matching version, and  `n ls-remote` lists multiple matching versions.\n\nNumeric version numbers can be complete or incomplete, with an optional leading `v`.\n\n- `4.9.1`\n- `8`: 8.x.y versions\n- `v6.1`: 6.1.x versions\n\nThere are labels for two especially useful versions:\n\n- `lts`: newest Long Term Support official release\n- `latest`, `current`: newest official release\n\nThere is support for release streams:\n\n- `argon`, `boron`, `carbon`: codenames for LTS release streams\n\nThe last form is for specifying [other releases](https://nodejs.org/download) available using the name of the remote download folder optionally followed by the complete or incomplete version.\n\n- `chakracore-release/latest`\n- `nightly`\n- `test/v11.0.0-test20180528`\n- `rc/10`\n\n## Removing Versions\n\nRemove some cached versions:\n\n    n rm 0.9.4 v0.10.0\n\nRemoving all cached versions except the current version:\n\n    n prune\n\nRemove the installed node and npm (does not affect the cached version). This can be useful\nto revert to the system version of node (if in a different location), or if you no longer\nwish to use node and npm, or are switching to a different way of managing them.\n\n    n uninstall\n\n## Using Downloaded Node Versions Without Reinstalling\n\nThere are three commands for working directly with your downloaded versions of `node`, without reinstalling.\n\nYou can show the path to the downloaded version:\n\n    $ n which 6.14.3\n    /usr/local/n/versions/6.14.3/bin/node\n\nOr run a downloaded `node` version with the `n run` command:\n\n    n run 8.11.3 --debug some.js\n\nOr execute a command with `PATH` modified so `node` and `npm` will be from the downloaded `node` version.\n(NB: this `npm` will be working with a different and empty global node_modules directory, and you should not install global\nmodules this way.)\n\n    n exec 10 my-script --fast test\n\n## Miscellaneous\n\nCommand line help can be obtained from `n --help`.\n\nList matching remote versions available for download:\n\n    n ls-remote lts\n    n ls-remote latest\n    n lsr 10\n    n --all lsr\n\nList downloaded versions in cache:\n\n    n ls\n\nDisplay diagnostics to help resolve problems:\n\n    n doctor\n\n## Custom Source\n\nIf you would like to use a different node mirror which has the same layout as the default <https://nodejs.org/dist/>, you can define `N_NODE_MIRROR`.\nThe most common example is users in China can define:\n\n    export N_NODE_MIRROR=https://npm.taobao.org/mirrors/node\n\nThere is also `N_NODE_DOWNLOAD_MIRROR` for a different mirror with same layout as the default <https://nodejs.org/download>\n\n## Custom Architecture\n\nBy default `n` picks the binaries matching your system architecture, e.g. `n` will download 64 bit binaries for a 64 bit system. You can override this by using the `-a` or `--arch` option.\n\nDownload and use latest 32 bit version of `node`:\n\n    n --arch x86 latest\n\n## Optional Environment Variables\n\nThe `n` command downloads and installs to `/usr/local` by default, but you may override this location by defining `N_PREFIX`.\nTo change the location to say `$HOME/.n`, add lines like the following to your shell initialization file:\n\n    export N_PREFIX=$HOME/.n\n    export PATH=$N_PREFIX/bin:$PATH\n\nBy default `n` downloads archives from the mirror site which have been compressed with `gzip`. You can switch to using the `xz` compressed archives by defining `N_USE_XZ`.\n\n    export N_USE_XZ=true\n\nIn brief:\n\n- `N_NODE_MIRROR`: See [Custom source](#custom-source)\n- `N_NODE_DOWNLOAD_MIRROR`: See [Custom source](#custom-source)\n- support for [NO_COLOR](http://no-color.org) and [CLICOLOR=0](https://bixense.com/clicolors) for controlling use of ANSI color codes\n- `N_MAX_REMOTE_MATCHES` to change the default `ls-remote` maximum of 20 matching versions\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'n@6.1.0',
+35 silly resolved     _from: 'n@' } ]
+36 info install n@6.1.0 into /usr/local/lib
+37 info installOne n@6.1.0
+38 info /usr/local/lib/node_modules/n unbuild
+39 verbose tar unpack /Users/kaori/.npm/n/6.1.0/package.tgz
+40 silly lockFile 9a5950d7-tar-usr-local-lib-node-modules-n tar:///usr/local/lib/node_modules/n
+41 verbose lock tar:///usr/local/lib/node_modules/n /Users/kaori/.npm/9a5950d7-tar-usr-local-lib-node-modules-n.lock
+42 silly lockFile 7450fe3a-rs-kaori-npm-n-6-1-0-package-tgz tar:///Users/kaori/.npm/n/6.1.0/package.tgz
+43 verbose lock tar:///Users/kaori/.npm/n/6.1.0/package.tgz /Users/kaori/.npm/7450fe3a-rs-kaori-npm-n-6-1-0-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 error Error: EACCES, mkdir '/usr/local/lib/node_modules/n'
+45 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/n']
+45 error   stack: 'Error: EACCES, mkdir \'/usr/local/lib/node_modules/n\'',
+45 error   errno: -13,
+45 error   code: 'EACCES',
+45 error   path: '/usr/local/lib/node_modules/n',
+45 error   fstream_type: 'Directory',
+45 error   fstream_path: '/usr/local/lib/node_modules/n',
+45 error   fstream_class: 'DirWriter',
+45 error   fstream_stack:
+45 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+45 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+45 error      'Object.oncomplete (fs.js:97:15)' ] }
+46 error Please try running this command again as root/Administrator.
+47 error System Darwin 18.7.0
+48 error command "node" "/usr/local/bin/npm" "install" "-g" "n"
+49 error cwd /Users/kaori/Desktop/kaos/portfolio
+50 error node -v v0.11.11
+51 error npm -v 1.3.25
+52 error path /usr/local/lib/node_modules/n
+53 error fstream_path /usr/local/lib/node_modules/n
+54 error fstream_type Directory
+55 error fstream_class DirWriter
+56 error code EACCES
+57 error errno -13
+58 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/n'
+59 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+59 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+59 error fstream_stack Object.oncomplete (fs.js:97:15)
+60 verbose exit [ -13, true ]

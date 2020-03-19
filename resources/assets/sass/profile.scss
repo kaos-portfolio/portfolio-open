@@ -1,0 +1,287 @@
+@charset "utf-8";
+@import "variables";
+@import "common";
+
+.profile_title_wrap {
+    width: 980px;
+    .title_wrap {
+        margin: 100px 0 0;
+    }
+    .profile_title_bg {
+        position: absolute;
+        top: -32px;
+        pointer-events: none;
+        @include sp {
+            display: none;
+        }
+    }
+    .pc_none {
+        width: calc(100% - 32px);
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include sp {
+            display: block;
+        }
+    }
+    @include sp {
+        width: auto;
+    }
+}
+
+.chronology_box_wrap {
+    display: flex;
+    justify-content: center;
+    background-color: $yellow;
+    @extend .content_full;
+    h3 {
+        font-size: 24px;
+    }
+    .clip {
+        position: absolute;
+        right: 52px;
+        top: -52px;
+        @include sp {
+            width: 32px;
+            right: 12px;
+            top: -20px;
+        }
+    }
+    .chick {
+        position: absolute;
+        left: 52px;
+        top: -52px;
+        @include sp {
+            width: 70px;  
+            left: 0;
+            top: -70px;
+        }
+    }
+}
+
+.chronology_box_wrap_inner {
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.chronology_explain_wrap {
+    padding: 16px;
+    border-radius: 50px;
+    background-color: $white;
+    border: solid 2px $black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    @include sp {
+        border-radius: 25px;
+        margin: 0 16px 32px 16px;
+    }
+}
+
+.chronology_explain {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.chronology_explain_description {
+    font-size: 13px;
+    font-weight: bold;
+    @include sp {
+        line-height: 1.6em;
+        font-size: 11px;
+    }
+}
+
+.chronology_wrap {
+    li {
+        align-items: center;
+        list-style: none;
+        @include sp {
+            margin: 0 16px 0 60px;
+            line-height: 1.6em;
+        }
+    }
+    @include sp {
+        .chronology_title_small,
+        .chronology_title_big,
+        .chronology_description_small,
+        .chronology_description_big {
+            width: calc(100% - 100px);
+            margin-left: 60px;
+            flex-direction: column;  
+            align-items: end;
+            padding-bottom: 16px;
+        }
+    }
+    .white_label {
+        font-size: 10px;
+        width: 52px;
+        margin-left: 8px;
+        @include sp {
+            line-height: 1em;
+            margin: 4px 0 0 0;
+        }
+    }
+    .blue_label {
+        margin-left: 8px;
+        @include sp {
+            line-height: 1em;
+            margin: 4px 0 0 0;
+        }
+    }
+}
+
+.chronology_title_big {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    margin: 60px 0 16px;
+}
+
+.chronology_description_small {
+    margin-bottom: 16px;
+    font-size: 11px;
+    margin-left: 50px;
+    line-height: 1.8em;
+}
+
+.chronology_description_big {
+    font-size: 13px;
+    margin-left: 40px;
+    line-height: 2em;
+}
+
+.chronology_title_small {
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+}
+
+.chronology_skill {
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 50px;
+    background-color: $white;
+    border: solid 2px $black;
+    padding: 16px;
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+    margin-top: 24px;
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include sp {
+            width: 60px;
+            bottom: -36px;
+        }
+    }
+    @include sp {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+}
+
+.chronology_skill_title {
+    margin-right: 24px;
+    width: 92px;
+    @include sp {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}
+
+.chronology_title_small {
+    margin-bottom: 16px;
+}
+
+@mixin chronology_circle($color, $size) {
+    border: solid 2px $black;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: $color;
+}
+
+.chronology_circle_blue {
+    @include chronology_circle($blue, 28px);
+    margin-right: 12px;
+    @include sp {
+        margin-left: 12px;
+        position: absolute;
+        left: -56px;
+    }
+}
+
+.chronology_circle_white {
+    @include chronology_circle($white, 22px);
+    margin: 0 20px 0 4px; 
+    @include sp {
+        position: absolute;
+        left: -44px;
+    }
+}
+
+.chronology_line {
+    height: calc(100% - 230px);
+    width: 3px;
+    background-color: $black;
+    position: absolute;
+    left: 13px;
+    top: 230px;
+    z-index: -1;
+    @include sp {
+        left: 29px;
+    }
+}
+
+.chronology {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin: 40px 0 20px;
+}
+
+.profile_supplement {
+    font-size: 10px;
+    @include sp {
+        padding: 0 16px;
+    }
+}
+
+.profile_supplement_wrap {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+    margin-left: 8px;
+}
+
+.fadein_second {
+    @include sp {
+        width: 100%;
+    }
+}
+
+.chronology_detail {
+    width: 620px;
+    line-height: 1.6em;
+    @include sp {
+        line-height: 1.8em;
+        font-size: 11px;
+        width: 100%;
+    }
+}
+
+.chronology_pc {
+    width: 132px;
+}

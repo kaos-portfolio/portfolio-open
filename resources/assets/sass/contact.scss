@@ -1,0 +1,343 @@
+@charset "utf-8";
+@import "variables";
+@import "common";
+@import "variables";
+
+.contact_form {
+    @extend .content_full;
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form_top {
+    margin-top: 40px;
+    @extend .contact_form;
+  }
+
+.contact_chick {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include sp {
+        left: 32px;
+        bottom: -20px;
+        width: 60px;
+    }
+}
+
+@mixin text($height, $radius) {
+    width: 540px;
+    height: $height;
+    border-radius: $radius;
+    border: solid 2px $black;
+    font-size: 14px;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.contact_title_wrap {
+    display: flex;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    img {
+        margin-right: 12px;
+        width: 92px;
+        @include sp {
+            width: 60px;
+        }
+    }
+    span {
+        font-weight: bold;
+    }
+}
+
+.contact_form_inner {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 16px;
+    position: relative;
+    .contact_title_wrap {
+        margin: 100px 0 32px;
+        @include sp {
+            margin: 80px 0 40px;
+        }
+    }
+    input[type=submit].pink_btn {
+        padding-top: 13px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    li {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .contact_title {
+        font-weight: bold;
+        margin-right: 8px;
+        justify-content: center;
+        font-size: 13px;
+        @include sp {
+            margin-right: 4px;
+        }
+    }
+    input[type="text"] {
+        border: none;
+        outline: none;
+        @include text(48px, 50px);
+        padding-left: 16px;
+        @include sp {
+            border-radius: 25px;
+            font-size: 16px;
+        }
+    }
+    input[type="text"].error_input,
+    textarea.error_input {
+        border: 2px solid $red;
+        &::placeholder {
+            color: red;
+          }
+    }
+    .error_input {
+        border: 2px solid $red;
+    }
+    textarea {
+        border: none;
+        outline: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        @include text(320px, 25px);
+        padding: 16px 0 0 16px;
+        @include sp {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+    .btn_wrap {
+        width: 300px;
+        margin: 40px auto 60px;
+        position: relative;
+        left: 0;
+        right: 0;
+        .arrow {
+            position: absolute;
+            right: 16px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            @include sp {
+                right: 32px;
+            }
+            &:before {
+              padding-left: 3px;
+            }
+        }
+        @include sp {
+            width: 240px;
+        }
+    }
+    @include sp {
+        width: 100%;
+        }
+    .error_list {
+        text-align: left;
+        width: 532px;
+        li {
+            font-weight: bold;
+            color: $red;
+            font-size: 11px;
+            margin-bottom: 12px;
+        }
+        @include sp {
+            width: 100%;
+        }
+    }
+}
+
+.contact {
+    z-index: 3;
+    li {
+        flex-direction: column;
+    }
+    div {
+        display: flex;
+        width: 200px;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+}
+
+.confirm_wrap {
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    @extend .content_full;
+    align-items: center;
+    .contact_title_wrap {
+        h2 {
+            font-size: 24px;
+            margin-top: 8px;
+            @include sp {
+                font-size: 18px;
+            }
+        }
+    }
+    input {
+        padding-top: 12px;
+    }
+    .btn_wrap {
+        position: relative;
+        @include sp {
+            flex-direction: column;
+        }
+    }
+    .white_btn {
+        @include sp {
+            margin-bottom: 12px;
+        }
+    }
+    .arrow {
+        position: absolute;
+        right: 24px;
+        margin: auto;
+        top: 16px;
+        &:before {
+            color: $white;
+        }
+    }
+}
+
+.confirm_list {
+    padding: 60px 0;
+    width: 600px;
+    font-size: 16px;
+    li {
+        display: flex;
+        margin-bottom: 16px;
+        @include sp {
+            flex-direction: column;
+        }
+    }
+    .label {
+        font-weight: bold;
+        width: 200px;
+    }
+    .text {
+        width: 400px;
+        @include sp {
+            width: 100%;
+        }
+    }
+    @include sp {
+        width: 100%;
+    }
+}
+
+.btn_wrap {
+    display: flex;
+    .white_btn {
+        margin-right: 12px;
+    }
+}
+
+ .confirm_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .arrow:before {
+        padding-left: 6px;
+    }
+ }
+
+ .complete_wrap {
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    @extend .content_full;
+    h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+        @include sp {
+            font-size: 24px;
+            margin: 0 16px 8px;
+        }
+    }
+    p {
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+ }
+
+ .contact_title_description_sub {
+     font-weight: bold;
+     font-size: 18px;
+     margin-bottom: 8px;
+ }
+
+ .contact_title_description {
+     @include sp {
+        h2 {
+            font-size: 16px;
+        }
+        span {
+            font-size: 11px;
+        }
+     }
+ }
+
+ form {
+     @include sp {
+        width: calc(100% - 32px);
+     }
+ }
+
+ .concept_title_wrap {
+    @include sp {
+       width: 100%;
+    }
+ }
+
+ .concept_title_img {
+    @include sp {
+        display: none;
+    }
+ }
+
+ .contact_top_bg {
+     position: absolute;
+     top: 72px;
+     left: 0;
+     right: 0;
+     margin: auto;
+ }
+
+ .contact_bottom_bg {
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+ }
+
+ .error_message {
+     font-size: 11px;
+     color: $red;
+     margin-top: 4px;
+     font-weight: bold;
+ }
+
+ .fadein_first .btn_wrap .arrow:before {
+    padding-left: 5px;
+ }

@@ -1,0 +1,612 @@
+@charset "utf-8";
+@import "../variables";
+@import "../common";
+
+.music_header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    align-items: center;
+    z-index: 5;
+    padding-right: 12px;
+}
+
+.music_logo {
+    width: 300px;
+    padding: 12px;
+    @include sp {
+        width: 240px;
+        margin-bottom: 24px;
+    }
+}
+
+.music_menu {
+    display: flex;
+    margin-left: auto;
+    color: $music_purple;
+    @include sp {
+        display: none;
+    }
+    a {
+        margin-right: 16px;
+    }
+}
+
+.music_main {
+    height: 100vh;
+    background: url("/img/works/music/main/main.jpg") center no-repeat;
+    background-position: 50% 0%;
+    margin-top: -76px;
+    background-size: cover;
+    @include sp {
+        margin-top: -88px;
+        height: 500px;
+        background: url("/img/works/music/main/main_sp.jpg") center no-repeat;
+        background-size: cover;
+    }
+}
+
+.music_main_copy {
+    position: absolute;
+    bottom: 24px;
+    @include sp {
+        display: none;
+    }
+}
+
+.music_banner_wrap {
+    width: 40px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    height: 300px;
+    a {
+        display: flex;
+        flex: auto;
+        justify-content: center;
+        align-items: center;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        @include sp {
+            writing-mode: initial;
+            width: 50%;
+            height: 60px;
+            margin-bottom: 0;
+        }
+    }
+    @include sp {
+        width: 100%;
+        flex-direction: row;
+        bottom: 0;
+        height: initial;
+    }
+}
+
+.music_banner_title {
+    font-size: 20px;
+}
+
+@mixin  music_banner($color, $bg_color) {
+    height: 50%;
+    color: $color;
+    background: $bg_color;
+}
+
+
+.music_banner_document {
+    @include music_banner($white, $music_purple);
+    margin-bottom: 4px;
+}
+
+.music_banner_contact {
+    @include music_banner($white, $music_gradation);
+    margin-bottom: 16px;
+}
+
+.music_course_wrap {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    background: url("/img/works/music/course/course_bg.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @include sp {
+        background: url("/img/works/music/course/course_bg_sp.jpg") center no-repeat;
+        background-size: cover;
+        height: initial;
+        min-height: initial;
+    }
+    .music_title_wrap {
+        @include sp {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.music_title_wrap {
+    padding-top: 160px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    @include sp {
+        padding-top: 60px;
+    }
+}
+
+.music_title {
+    display: flex;
+    color: $music_purple;
+    align-items: center;
+    margin-bottom: 12px;
+    h2 {
+        padding: 0 12px;
+        font-size: 47px;
+        @include sp {
+            font-size: 32px;
+        }
+    }
+}
+
+.brackets {
+    font-size: 38px;
+}
+
+.music_course_card_wrap {
+    display: flex;
+    padding-top: 60px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    a:last-child {
+        margin-right: 0;
+    }
+    @include sp {
+        width: 360px;
+        padding: 12px;
+        flex-direction: column;
+        bottom: -12px;
+    }
+}
+
+.music_course_card {
+    height: 100%;
+    position: relative;
+    margin-right: 12px;
+    img {
+        width: 100%;
+    }
+    @include sp {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}
+
+.music_course_card_text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-flow: column;
+    justify-content: center;
+    color: $white;
+    div {
+        border: 1px solid $white;
+        padding: 12px;
+        width: calc(100% - 80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 16px;
+        @include sp {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.music_reason_wrap {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    background: url("/img/works/music/reason/reason_bg.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @include sp {
+        height: 600px;
+        min-height: 600px;
+        background: url("/img/works/music/reason/reason_bg_sp.jpg") no-repeat;
+        background-size: cover;
+    }
+    .music_title_wrap {
+        padding-top: 60px;
+    }
+    .more {
+        bottom: -40px;
+        color: $white;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        width: 240px;
+        font-size: 13px;
+        padding: 16px;
+        border: 1px solid $white;
+        justify-content: center;
+        @include sp {
+            left: inherit;
+            bottom: 60px;
+
+        }
+    }
+    .music_title, .music_title_wrap {
+        color: $white;
+    }
+    .music_title {
+        margin-top: 60px;
+        @include sp {
+            margin-top: 0;
+        }
+    }
+}
+
+.music_reason_card_wrap {
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    @include sp {
+        flex-direction: column;
+        align-items: center;
+    }
+    a:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+.music_reason_card {
+    position: relative;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: calc(100% / 3);
+    margin-right: 32px;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    z-index: 3;
+    @include sp {
+        width: calc(100% - 32px);
+        flex-direction: row;
+        margin-right: 0;
+        height: max-content;
+    }
+    img {
+        width: 60px;
+        @include sp {
+            width: 30px;
+        }
+    }
+    &:nth-child(2) {
+        img {
+            width: 40px;
+            @include sp {
+                width: 28px;
+            }
+        }
+    }
+}
+
+.music_reason {
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 40px 0 12px 0;
+        @include sp {
+            margin: 0 0 4px;
+            font-size: 16px;
+        }
+    }
+    span {
+        font-size: 11px;
+    }
+}
+
+.music_reason_number {
+    position: absolute;
+    color: $music_gray;
+    font-size: 120px;
+    bottom: 52px;
+    right: 28px;
+    @include sp {
+        font-size: 50px;
+        bottom: 24px;
+    }
+}
+
+.music_contact_wrap {
+    margin-top: 120px;
+    height: 240px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/img/works/music/contact/contact_bg.jpg") center no-repeat;
+    @include sp {
+        margin-top: 40px;
+    }
+}
+
+.music_contact {
+    vertical-align: middle;
+    color: $white;
+    display: flex;
+    align-items: center;
+    @include sp {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.music_contact_description {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 16px;
+    @include sp {
+        font-weight: normal;
+        padding-bottom: 8px;
+    }
+}
+
+.music_contact_tel {
+    font-size: 32px;
+    font-weight: bold;
+    color: $white;
+    text-decoration: none;
+    @include sp {
+        margin-bottom: 12px;
+    }
+}
+.music_contact_button {
+    display: flex;
+    @include sp {
+        flex-direction: column;
+    }
+}
+@mixin music_contact_button() {
+    width: 240px;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+}
+
+.music_contact_button_left {
+    @include music_contact_button();
+    background: $music_purple;
+    margin-right: 12px;
+    @include sp {
+        margin: 0 0 12px;
+    }
+}
+
+.music_contact_button_right {
+    @include music_contact_button();
+    background: $music_gradation;
+}
+
+.music_contact {
+    margin-bottom: 32px;
+    @include sp {
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+@mixin music_interview() {
+    display: flex;
+    position: relative;
+    margin-bottom: 160px;
+    @include sp {
+        width: calc(100% - 24px);
+        margin: 0 12px;
+    }
+    .music_interview_title {    
+        position: absolute;
+        bottom: -4px;
+        p {
+            font-size: 32px;
+            padding-bottom: 12px;
+            font-weight: bold;
+            @include sp {
+                font-size: 18px;
+            }
+        }
+        span {
+            display: block;
+            font-size: 13px;
+            color: $music_purple;
+            padding-bottom: 24px;
+            font-weight: bold;
+            @include sp {
+                font-size: 12px;
+                padding-bottom: 10px;
+            }
+        }
+        a {
+            border: 1px solid $black;
+            padding: 12px;
+            width: 200px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @include sp {
+            top: 44px;
+        }
+    }
+    img {
+        @include sp {
+            width: 80%;
+            height: 100px;
+            object-fit: cover;
+
+        }
+    }
+    @include sp {
+        margin-bottom: 120px;
+    }
+}
+
+.music_interview_right {
+    @include music_interview;
+    img {
+        margin-left: auto;
+    }
+    .music_interview_title {
+        left: 0;
+        text-align: left;
+        @include sp {
+            margin-left: 16px;
+        }
+    }
+    position: relative;
+    &::after {
+        content: '';
+        height: 200px;
+        background-color: $music_purple;
+        position: absolute;
+        z-index: -1;
+        width: 880px;
+        height: 200px;
+        right: -20px;
+        bottom: -20px;
+        @include sp {
+            width: 60%;
+            height: 120px;
+            right: 0;
+        }
+    }
+}
+
+@mixin music_interview_left() {
+    @include music_interview;
+    a {
+        margin-left: auto;
+    }
+    .music_interview_title {
+        right: 0;
+        text-align: right;
+        @include sp {
+            margin-right: 16px;
+        }
+    }
+    &::after {
+        content: '';
+        background-color: $music_purple;
+        position: absolute;
+        z-index: -1;
+        width: 880px;
+        height: 200px;
+        left: 20px;
+        bottom: -20px;
+        @include sp {
+            width: 60%;
+            left: 0;
+            height: 112px;
+        }
+    }
+}
+
+.music_interview_left1 {
+    @include music_interview_left();
+    position: relative;
+    margin-top: 80px;
+    img {
+        @include sp {
+            object-position: 0 100%
+        }
+    }
+    @include sp {
+        margin-top: 60px;
+    }
+}
+
+.music_interview_left2 {
+    @include music_interview_left();
+    img {
+        @include sp {
+            object-position: 100% 100%;
+        }
+    }
+}
+
+.music_reason {
+    z-index: 3;
+    width: 248px;
+    word-break: break-all;
+    @include sp {
+        margin-left: 24px;
+    }
+}
+
+.music_foooter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 12px 24px;
+    @include sp {
+        flex-direction: column;
+    }
+}
+
+.music_foooter_menu {
+    margin-left: auto;
+    font-size: 12px;
+    a {
+        margin-right: 16px;
+    }
+    @include sp {
+        margin-left: initial;
+    }
+}
+
+.music_copyright_wrap {
+    border-top: 1px solid $music_gray;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 0 12px;
+    p {
+        color: $font_gray;
+        font-size: 11px;
+    }
+    @include sp {
+        margin-bottom: 100px;
+    }
+}
+
+.header_list_wrap_sp {
+    margin-right: 16px;
+    .header_list_label_sp {
+        background-color: initial;
+        margin-top: -24px;
+        &::before {
+            font-size: 13px;
+            color: $white;
+        }
+    }
+}

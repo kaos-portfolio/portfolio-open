@@ -1,0 +1,97 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+//オリジナル
+$dark_black: #000000;
+$white: #ffffff;
+$black: #333333;
+$font_gray: #AAAAAA;
+$yellow: #FFE633;
+$blue: #37A3F4;
+$pink: #E851A2;
+$red: #F34664;
+$gray: #FAFAFA;
+
+//スマホ対応
+$sp: 599px;
+$pc: 600px;
+
+//保育園サイト
+$nursery_brown: #896849;
+$nursery_orange: #FFA933;
+$nursery_pink_bg: #FFFBFB;
+$nursery_blue: #459BD7;
+$nursery_light_blue: #2DBCD2;
+$nursery_bg_blue: #F4FEFF;
+$nursery_red: #E55E52;
+$nursery_green: #D9E78D;
+$nursery_pink: #FFE8EB;
+$nursery_yellow: #FFFA9A;
+
+//音楽サイト
+$music_purple: #D62CFF;
+$music_gray: #DDDDDD;
+$music_gradation: linear-gradient(to left, #4CFF2C, #C7FF2E);
+
+//転職サイト
+$career_orange: #FF8802;
+$career_pink: #FF31C4;
+$career_gray: #FCFCFC;
+$career_font_gray: #777777;
+$career_button_gray: #555555;
+$career_input_bg: #464646;
+$career_border_gray: #DDDDDD;
+$career_gradation: linear-gradient(to right, #f24998, #ff954a);
+$career_gradation_green: linear-gradient(to right, #ADED00, #29D600);
+
+//不動産
+$realestate_blue: #293d54;
+$realestate_dark_blue: #466891;
+$realestate_gold: #B8C337;
+$realestate_border: #DDDDDD;
+
+//カフェサイト
+$cafe_red: #F71105;
+$cafe_gray: #dddddd;
+
+//採用サイト
+$recruit_blue: #05B0FF;
+$recruit_gray: #dddddd;
+$recruit_description: #777777;
+$recruit_gradation: linear-gradient(to left, #05B0FF, #15D9D9);
